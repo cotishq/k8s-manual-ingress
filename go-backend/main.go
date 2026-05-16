@@ -41,7 +41,7 @@ func main() {
 
 	http.HandleFunc("/users", usersHandler(db))
 
-	log.Println("server running on port 3000")
+	log.Println("server is running on port 3000")
 	log.Fatal(http.ListenAndServe(":3000", nil))
 }
 
